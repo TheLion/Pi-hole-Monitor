@@ -52,10 +52,10 @@ SOFTWARE.
 // Start Settings
 //******************************
 
-String PiHoleServer = "";   // IP or Address of your Pi-Hole Server (DO NOT include http://)
+String PiHoleServer = "192.168.206.108";   // IP or Address of your Pi-Hole Server (DO NOT include http://)
 int PiHolePort = 80;        // the port you are running (usually 80);
 String PiHoleApiKey = "";   // Optional -- only needed to see top blocked clients
-boolean SHOW_CLIENTS = true; // true = display top 3 blocked clients on your network
+boolean SHOW_CLIENTS = false; // true = display top 3 blocked clients on your network
 
 // Webserver Settings for this monitoring device
 const int WEBSERVER_PORT = 80; // The port you can access this device on over HTTP
@@ -65,8 +65,8 @@ char* www_username = "admin";  // User account for the Web Interface
 char* www_password = "password";  // Password for the Web Interface
 
 // Date and Time
-float UtcOffset = -7; // Hour offset from GMT for your timezone
-boolean IS_24HOUR = false;     // 23:00 millitary 24 hour clock
+float UtcOffset = 2; // Hour offset from GMT for your timezone
+boolean IS_24HOUR = true;     // 23:00 millitary 24 hour clock
 int minutesBetweenDataRefresh = 15; // this is minutes between refreshing Clock only
 
 // Display Settings
@@ -88,4 +88,4 @@ String OTA_Password = "";      // Set an OTA password here -- leave blank if you
 // End Settings
 //******************************
 
-String themeColor = "light-blue"; // this can be changed later in the web interface.
+String themeColor = "red"; // this can be changed later in the web interface.
